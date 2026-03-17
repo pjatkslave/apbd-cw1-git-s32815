@@ -11,21 +11,29 @@ while (true)
 
 	if (command == "work")
 	{
-        if (mySlave.Energy > 0)
+        if (mySlave.Energy < 0)
         {
-            mySlave.Work();
+            	Console.WriteLine("Error your slave is almost dead, give him some rest");
         }
+	else if (mySlave.Hunger > 100)
+	{
+	    	Console.WriteLine("Error your slave is almost dead, give him some food");
+	}
         else
         {
-            Console.WriteLine("Error your slave is almost dead, give him some rest");
+            	mySlave.Work();
         }
     	}
 	else if (command == "rest")
 	{
 		mySlave.Rest();
 	}
+	else if (command == "feed")
+    	{
+        	mySlave.Feed();
+    	}
 	else
 	{
-	Console.Writeline("error command");
+		Console.Writeline("error command");
 	}
 }
