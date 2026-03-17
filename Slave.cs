@@ -27,5 +27,4 @@ public class Slave
     	Hunger += 50;
     	Console.WriteLine($"{Name} is punished, energy left: {Energy}%, hunger level: {Hunger}%, and he start to work harder, but you will not see the result of it, cause work of pjatkslave is pointless");
     }
-	
 }
