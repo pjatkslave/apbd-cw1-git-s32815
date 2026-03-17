@@ -3,6 +3,7 @@ Console.WriteLine("Hello, your slave waiting for work");
 Console.WriteLine("Write 'work' and pjatkslave will start to write a code for you");
 Console.WriteLine("Write 'rest' and pjatkslave will rest");
 Console.WriteLine("Write 'feed' and you will give some food to pjatkslave");
+Console.WriteLine("Write 'punish' and you will hit your slave with whip");
 Slave mySlave = new Slave();
 
 while (true)
@@ -32,6 +33,10 @@ while (true)
 	else if (command == "feed")
     	{
         	mySlave.Feed();
+    	}
+	else if (command == "punish")
+    	{
+        	mySlave.Punish();
     	}
 	else
 	{
