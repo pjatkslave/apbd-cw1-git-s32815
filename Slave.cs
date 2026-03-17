@@ -7,7 +7,7 @@ public class Slave
 
     	public void Work()
     {
-        Energy -= 1;
+        Energy -= 67;
 	Hunger += 20;
         Console.WriteLine($"{Name} is coding, energy left: {Energy}%");
     }
