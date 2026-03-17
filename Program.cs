@@ -2,6 +2,7 @@
 Console.WriteLine("Hello, your slave waiting for work");
 Console.WriteLine("Write 'work' and pjatkslave will start to write a code for you");
 Console.WriteLine("Write 'rest' and pjatkslave will rest");
+Console.WriteLine("Write 'feed' and you will give some food to pjatkslave");
 Slave mySlave = new Slave();
 
 while (true)
