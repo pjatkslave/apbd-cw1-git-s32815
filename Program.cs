@@ -6,7 +6,7 @@ Slave mySlave = new Slave();
 
 while (true)
 {
-	string command = Console.ReadLine()
+	string command = Console.ReadLine();
 	if (command == "exit") break;
 
 	if (command == "work")
